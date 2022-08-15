@@ -1,8 +1,8 @@
 <section class="text-center m-5">
-    <h1 class="text-center" >Welcome To Basic Rails 6 Auth</h1>
-    <p>Rails 6 auth using devise</p>
+    <h1 class="text-center" >Welcome</h1>
+    <p>The current count is:</p>
     <% if current_user %>
-        <h5><%= current_user.email %></h5>
+        <h5><%= @count %></h5>
     <%end%>
     <%=
         link_to_if(current_user.nil?, "Login", sign_in_path, class: 'btn btn-primary m-5') do
